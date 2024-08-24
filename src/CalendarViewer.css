@@ -1,0 +1,79 @@
+/* src/CalendarViewer.css */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #888;
+  }
+  
+  .days {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    width: 14.28%;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  
+  .cell {
+    padding: 10px;
+    position: relative;
+  }
+  
+  .cell:hover {
+    background-color: #e9ecef;
+    border-radius: 4px;
+  }
+  
+  .disabled {
+    color: #ccc;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .event-indicator {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
